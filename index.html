@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--<script type="text/javascript" src="js/jquery.js"></script>-->
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/javascript.js"></script>
+  <link rel="stylesheet" href="css/estilos.css">
+	<title>MoovieZone</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!--5da7b3797402b87f752644e1502c02f5 -->
+<!-- auenticacion https://api.themoviedb.org/3/movie/76341?api_key={api_key}  -->
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header">
+      <a href="index.html" id="index" onclick="resetearcontador()"><h1>MoovieZone</h1></a>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="#">Categorias</a>
+    <a href="compartir.html">Compartir</a>
+    <a id="Ubicacion" href="contacto.html">Contacto</a>
+    </div>
+  </nav>
+  
+  <!--consulta a la api -->
+  <div id="contenidos">
+    <input type="text" id="bpelicula" placeholder="ingresar titulo ..." name="busacador">
+    <button id="botonbuscar" onclick="searchmoviee(getElementById('bpelicula').value)" type="button">search...</button>
+  
+
+  </div>
+  
+  <!--ejemplo botones del contador y borrar contador -->
+  <div id="botonesHistorial">
+    
+  </div>
+  <!--        -->
+ 
+  <section id="mostrarpelis" class="row">
+
+    
+  </section >
+<div id="mapa "></div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <h4>movieezone@gmail.com</h4>
+    <h4>Copirigth &copy 2019</h4>
+    <h4>Ayuda</h4>
+    <h4>Terminos y condiciones</h4>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(1, 210, 119);
+  color: white;
+  /*position: fixed;
+  width: 90%;*/
+}
+#index{
+	text-decoration: none;
+}
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #081c24;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+
+/*image, just for this example */
+.imagen,.descripcion {
+  background-color: #aaa;
+  width: 100%;
+
+}
+
+/* Footer */
+.footer {
+  
+  text-align: center;
+  color: white;
+  background-color: #081c24;
+  float: left;
+  width: 100%;
+}
+#mapa{
+	height: 500px;
+}
+ #botonesHistorial{
+    width: 100%;
+    float: left;
+
+  }
+
+/* Responsive layout - when the screen is less than 479px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 479px) {
+ 	.row {
+	clear: left;
+	display: flex;
+	flex-wrap: wrap;
+	}
+	.img,.titulos,{
+		width: 100%;
+	}
+	.descripcion{
+		width: 100%;
+		font-size:20px;
+	}
+ 
+  .botonH{
+    float: left;
+    margin: 2px;
+    width: 30%;
+    height: 30px;
+
+  }
+  input{
+    height: 30px;
+    margin: 5px;
+    width: 75%;
+  }
+  #botonbuscar{
+    height: 30px;
+  }
+
+}
+@media screen and (min-width: 480px) and (max-width: 765px) {
+  .imagenesagregadas{
+    width: 30%;
+    float: left;
+    margin-left: 10px;
+  }
+
+  .botonH{
+    float: left;
+    margin: 2px;
+    width: 16%;
+    height: 30px;
+
+  }
+  input{
+    margin: 5px;
+    width: 200px;
+  }
+
+
+}
+
+/* Responsive layout - when the screen is less than 767px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 767px) {
+	.imagenesagregadas{
+		width: 19%;
+		float: left;
+		margin-left: 10px;
+	
+	}
+  .imagendescripcioncompleta,.imagencompartir{
+    
+    display:block;
+    margin:auto;
+  }
+
+  .botonH{
+    float: left;
+    margin: 5px;
+    width: 150px;
+    height: 50px;
+
+
+  }
+  input{
+    margin: 5px;
+    width: 200px;
+  }
+
+
+}
+
